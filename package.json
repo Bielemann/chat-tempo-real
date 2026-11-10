@@ -1,0 +1,13 @@
+{
+  "name": "chat-tempo-real",
+  "version": "1.0.0",
+  "description": "Aplicação de chat em tempo real com Node.js e WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

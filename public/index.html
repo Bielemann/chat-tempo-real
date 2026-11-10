@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat em Tempo Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="chat">
+    <header class="topo">
+      <div>
+        <h1>Chat em Tempo Real</h1>
+        <p>Converse instantaneamente com outras pessoas</p>
+      </div>
+      <span id="status" class="status">Conectando...</span>
+    </header>
+
+    <section class="identificacao">
+      <label for="username">Seu nome</label>
+      <input id="username" maxlength="24" placeholder="Digite seu nome" value="Visitante">
+    </section>
+
+    <section id="messages" class="mensagens" aria-live="polite">
+      <p class="aviso">Carregando mensagens...</p>
+    </section>
+
+    <form id="messageForm" class="envio">
+      <input id="messageInput" maxlength="500" placeholder="Digite sua mensagem..." autocomplete="off" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
